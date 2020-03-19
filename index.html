@@ -1,0 +1,125 @@
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Exemplo menu</title>
+		<style type="text/css">	
+			body {
+				background-color: #B0C4DE;
+			}
+			nav {
+				background-color: #FFA051;
+				width: 100%;
+				height: 54px;
+				color: #ffffff;
+				font-family: arial;
+			}	
+			nav ul {
+				list-style-type: none;
+			}
+			nav  .menu .item {
+				float: left;
+				padding: 18px;
+			}
+			nav .menu li:hover {
+				background-color: #aa3939;
+				cursor: pointer;
+			}
+			nav .menu li ul.ul1 {
+				display: none;
+			}
+			nav .menu li:hover ul.ul1 {
+				display: block;
+				position: absolute;
+				background-color: #2b8b2b;
+				line-height: 40px;
+				padding-right: 5%;
+				margin-top: 1.2%;
+			}
+			nav .menu li ul.ul1 li:hover ul.ul2 li:hover{
+				background-color: #FF00FF;
+			}
+			nav .menu li ul.ul1 li:hover ul.ul2{
+				display: block;
+				position: absolute;
+				background-color: red;
+				margin-top: 0%;
+				margin-left: -5%;
+				padding-left: -15px;
+				padding-right: 15px;
+			}
+			.ul2{
+				display: none;
+			}
+			.pull-right{
+				float: right;
+				padding: 18px;
+				text-align: right;
+			}
+			.pull-right:hover{
+				background-color: #191970 !important;
+			}
+			.box-login {
+				display: none;
+			}
+			.pull-right:hover .box-login{
+				display: block;
+				margin-top: 6%;
+				background-color: #4682B4;
+				width: 230px;
+				padding: 22px;
+				border-color: #0000FF;
+				border: 5px;
+				border-radius: 15px;
+			}
+			.form input{
+				border: none;
+				line-height: 25px;
+				margin: 4%;
+				border-radius: 3px;
+			}
+			.form .botao{
+				padding: 5px;
+				width: 60%;
+				font-size: 14px;
+				color: #ffffff;
+				background-color: #000080;
+			}
+			.form .botao:hover{
+				background-color: #1E90FF;
+			}
+		</style>		
+	</head>
+	<body>
+		<nav>
+			<ul class="menu">
+				<li class="item">Inicio</li>
+				<li class="item">Sobre</li>
+				<li class="item">Clientes</li>
+				<li class="item">Produtos
+					<ul class="ul1">
+						<li>Eletrônicos
+							<ul class="ul2">
+								<li class="item2">TV</li>
+								<li class="item2">Microondas</li>
+								<li class="item2">Geladeira</li>
+							</ul>	
+						</li>
+						<li>Móveis</li>
+						<li>Cozinha</li>
+					</ul>
+				</li>	
+				<li class="item">Contatos</li>
+				<li class="pull-right">LOGIN
+					<div class="box-login">
+						<p>Faça seu login para acessar sua conta</p>
+						<form action="" method="POST" class="form">
+							<input type="text" name="login" placeholder="Digite seu login">
+							<input type="password" name="senha" placeholder="Digite sua senha">
+							<input type="submit" name="acessar" valeu="Entrar" class="botao">
+						</form>
+					</div>
+				</li>
+			</ul>
+		</nav>
+	</body>
+</html>

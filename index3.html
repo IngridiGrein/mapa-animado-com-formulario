@@ -1,0 +1,39 @@
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Animated</title>
+		<style type="text/css">
+			.panda {
+				width: 30%;
+				height: 30%;
+				background-image: url('https://image.flaticon.com/icons/svg/2646/2646442.svg');
+				background-size: 100% 90%;
+				transform: scale 0.5;
+				animation: pulse 2s infinite;
+			}
+			@keyframe pulse {
+				0% {
+					transform: scale(0.2);
+				}
+				50% {
+					transform: scale(1);
+				}
+				100% {
+					transform: scale (0.2);
+				}
+			}
+
+			.panda2{
+				background-image: url('https://image.flaticon.com/icons/svg/1775/1775594.svg');
+				height: 50%;
+				width: 50%;
+				background-size: 80% 80%;
+			}
+		</style>	
+	</head>	
+	<body>
+		<div class="panda">
+
+		</div>
+	</body>
+</html>

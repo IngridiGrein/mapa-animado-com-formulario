@@ -1,0 +1,84 @@
+<!-- http://paste.ubuntu.com/p/6F6vc3tKTz/
+-->	
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Coronavirus</title>
+		<link rel="stylesheet" type="text/css" href="vendor/datatables/datatables-css/jquery.dataTables.min.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+		<link rel="stylesheet" type="text/css" href="vendor/datatables/button-css/buttons.dataTables.min.css">
+
+	</head>	
+	<body>
+	 	<div class="china">
+	 	</div>
+	 	<div class="italia">
+	 	</div>	
+	 	<div class="border">
+	 	</div>
+	 	<div class="box-login" id="box-login">
+	 		<h3> Verifique se na sua região existe contaminação</h3>
+	 		<form action="#" method="_POST" class="form">
+	 			<input type="text" name="pais" placeholder="País"><br>
+	 			<input type="radio" id="sul" name="regiao" value="sul">
+	 			<label for="sul">Sul</label><br>
+	 			<input type="radio" id="norte" name="regiao" value="norte">
+	 			<label for="norte">Norte</label><br>
+	 			<input type="radio" id="sudeste" name="regiao" value="sudeste">
+	 			<label for="sudeste">Sudeste</label><br>
+	 			<input type="radio" id="nordeste" name="regiao" value="nordeste">
+	 			<label for="nordeste">Nordeste</label><br>
+	 			<input type="radio" id="centro-oeste" name="regiao" value="centro-oeste">
+	 			<label for="centro-oeste">Centro-Oeste</label><br>
+	 			<input type="button" name="enviar" value="Acessar" class="btn"
+	 			onClick="
+	 				document.getElementById('box-login').classList.add('hide');
+					document.getElementById('box-sistema').classList.remove('hide');"
+				name="btn_acessa"> 
+	 		</form>
+	 	</div>
+	 	<div id="box-sistema" class="box-sistema hide">
+	 		<h4 class="titulo"> Insira os dados nos campos</h4>
+	 		<table id="example" class="display" cellspacing="0" width="90%">
+			  <thead>
+			    <tr>
+			      <th>Nome</th>
+			      <th>Idade</th>
+			      <th>Cidade</th>
+			    </tr>
+			  </thead>
+			  <tbody>
+			    <tr>
+			      <td> </td>
+			      <td> </td>
+			      <td> </td>
+			    </tr>
+			  </tbody>
+			</table>
+			<br/>
+			<button id="addRow" class="btn btn.table">Adicionar novo paciente</button>
+
+			<table id="newRow">
+			  <tbody>
+			    <tr >
+			      <td><input type="text" name="nome" placeholder="Insira seu nome"/> </td>
+			      <td><input type="text" name="idade" placeholder="Insira sua idade"/> </td>
+			      <td><input type="text" name="cidade" placeholder="Onde você mora"/> </td>
+			    </tr>
+			  </tbody>
+			</table>
+	 	</div>	
+	</body>
+	<script type="text/javascript" src="vendor/jquery/jquery 1.9.1/jquery-1.9.1.min.js"></script>
+	<script type="text/javascript" src="vendor/jquery/jquery-3.3.1/jquery-3.3.1.js"></script>
+	<script type="text/javascript" src="vendor/datatables/datatables-1.10.20/jquery.dataTables.min.js"></script>
+	<script type="text/javascript" src="assets/js/script.js"></script>
+	<script type="text/javascript" src="vendor/datatables/button.min/dataTables.buttons.min.js"></script>
+	<script type="text/javascript" src="vendor/datatables/button.flash/buttons.flash.min.js"></script>
+	<script type="text/javascript" src="vendor/cloudflare/jszip/jszip.min.js"></script>
+	<script type="text/javascript" src="vendor/cloudflare/pdfmake/pdfmake.min.js"></script>
+	<script type="text/javascript" src="vendor/cloudflare/vfs/vfs_fonts.js"></script>
+	<script type="text/javascript" src="vendor/datatables/button.html5/buttons.html5.min.js"></script>
+	<script type="text/javascript" src="vendor/datatables/button.print/buttons.print.min.js"></script>
+
+</html>	
